@@ -10,9 +10,6 @@ I’m a Research and Teaching Assistant at the [Systems Research Group](https://
 
 - **Quantum Compilers:** 
 - **Quantum Error Correction:** 
-<!---
-{% include_relative _includes/publications.md %}
--->
 
 ## Teaching
 
