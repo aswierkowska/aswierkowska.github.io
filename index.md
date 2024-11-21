@@ -8,8 +8,8 @@ I’m a Research and Teaching Assistant at the [Systems Research Group](https://
 
 ## Research Interests
 
-- **Quantum Compilers:** 
-- **Quantum Error Correction:** 
+- **Quantum Compilers** 
+- **Quantum Error Correction** 
 
 ## Teaching
 
