@@ -4,7 +4,7 @@ layout: homepage
 
 ## About Me
 
-I’m a Ph.D. student at the [Systems Research Group](https://dse.in.tum.de/), Technical University of Munich (TUM), supervised by Prof. Pramod Bhatotia.
+I’m a Research and Teaching Assistant at the [Systems Research Group](https://dse.in.tum.de/), Technical University of Munich (TUM), supervised by Prof. Pramod Bhatotia.
 
 ## Research Interests
 
