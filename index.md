@@ -17,3 +17,6 @@ Before that, I did my master's thesis ("Multi-Objective Circuit Optimizations in
 
 - **Quantum Software Systems Seminar WS 2024/2025, SS 2025**
 
+## Publications
+
+{% include publications.md %}
