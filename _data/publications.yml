@@ -1,0 +1,10 @@
+- title: "Achieving Pareto-Optimality in Quantum Circuit Compilation via a Multi-Objective Heuristic Optimization Approach"
+  authors: "Aleksandra Świerkowska, Jorge Echavarria, Laura Schulz, Martin Schulz"
+  conference: "2024 IEEE International Conference on Quantum Computing and Engineering (QCE), pp. 306-310"
+  link: "https://doi.org/10.1109/QCE60285.2024.10297"
+
+- title: "A Software Platform to Support Disaggregated Quantum Accelerators"
+  authors: "Ercüment Kaya, Jorge Echavarria, Muhammad Nufail Farooqi, Aleksandra Świerkowska, Patrick Hopf, Burak Mete, Lukas Burgholzer, Robert Wille, Laura Schulz, Martin Schulz"
+  conference: "SC24-W: Workshops of the International Conference for High Performance Computing, Networking, Storage and Analysis, pp. 1646-1653"
+  link: "https://doi.org/10.1109/SCW63240.2024.00205"
+
