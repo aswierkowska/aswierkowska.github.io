@@ -18,3 +18,8 @@ Before that, I did my master's thesis ("Multi-Objective Circuit Optimizations in
 - **Quantum Software Systems Seminar (WS 2024/2025, SS 2025, WS 2025/2026)**
 
 {% include publications.md %}
+
+## Services
+
+- **Technical Program Committee (TPC) for the SC26 "HPC for Machine Learning"**
+
