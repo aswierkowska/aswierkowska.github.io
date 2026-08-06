@@ -16,7 +16,7 @@ main:
 
   - title: "Chipmunq: A Fault-Tolerant Compiler for Chiplet Quantum Architectures"
     authors: "Peter Wegmann, Aleksandra Świerkowska, Emmanouil Giortamis, Pramod Bhatotia"
-    conference: "arXiv:2603.16389. (Under submission at SC26)"
+    conference: "arXiv:2603.16389. (Under submission at HPCA26)"
     pdf: "https://arxiv.org/abs/2603.16389"
 
   - title: "MCMit: Mid-Circuit Measurement Error Mitigation"

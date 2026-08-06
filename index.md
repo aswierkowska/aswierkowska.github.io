@@ -10,8 +10,9 @@ Before that, I did my master's thesis ("Multi-Objective Circuit Optimizations in
 
 ## Research Interests
 
-- **Quantum Compilers** 
 - **Quantum Error Correction** 
+- **Quantum Compilers** 
+- **Quantum Controllers** 
 
 ## Teaching
 
