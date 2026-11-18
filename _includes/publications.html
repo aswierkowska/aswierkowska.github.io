@@ -1,0 +1,27 @@
+{% assign list = include.list %}
+<div class="publications">
+  <ol class="bibliography">
+    {% for pub in list %}
+    {% if include.selected_only and pub.selected != true %}{% continue %}{% endif %}
+    <li>
+      <div class="pub-row">
+        <div class="pub-venue">
+          {% if pub.venue_short %}<span class="venue-text">{{ pub.venue_short }}</span>{% endif %}
+        </div>
+        <div class="pub-body">
+          <div class="title">{% if pub.pdf %}<a href="{{ pub.pdf }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</div>
+          <div class="author">{{ pub.authors }}</div>
+          <div class="periodical"><em>{{ pub.conference }}</em></div>
+          {% if pub.notes %}<div class="pub-note">{{ pub.notes }}</div>{% endif %}
+          <div class="btn-links">
+            {% if pub.pdf %}<a class="btn-link-sm" href="{{ pub.pdf }}" target="_blank" rel="noopener">PDF</a>{% endif %}
+            {% if pub.page %}<a class="btn-link-sm" href="{{ pub.page }}" target="_blank" rel="noopener">Project page</a>{% endif %}
+            {% if pub.code %}<a class="btn-link-sm" href="{{ pub.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
+            {% if pub.bibtex %}<a class="btn-link-sm" href="{{ pub.bibtex }}" target="_blank" rel="noopener">BibTeX</a>{% endif %}
+          </div>
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+</div>

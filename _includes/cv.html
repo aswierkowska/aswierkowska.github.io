@@ -1,0 +1,233 @@
+{% assign cv = site.data.cv %}
+
+<a class="anchor" id="contact"></a>
+<div class="card">
+  <h3 class="card-title">Contact Information</h3>
+  <ul class="list-group">
+    {% for row in cv.contact %}
+    <li class="list-group-item">
+      <div class="cv-row">
+        <div class="date-column"><span class="cv-date-label">{{ row.label }}</span></div>
+        <div class="cv-body cv-sub">
+          {% if row.link %}<a href="{{ row.link }}" target="_blank" rel="noopener">{{ row.value }}</a>{% else %}{{ row.value }}{% endif %}
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<a class="anchor" id="research-interests"></a>
+<div class="card">
+  <h3 class="card-title">Research Interests</h3>
+  <p class="card-intro">{{ cv.research_interests }}</p>
+</div>
+
+<a class="anchor" id="education"></a>
+<div class="card">
+  <h3 class="card-title">Education</h3>
+  <ul class="list-group">
+    {% for item in cv.education %}
+    <li class="list-group-item">
+      <div class="cv-row">
+        <div class="date-column">
+          <span class="cv-date-label">{{ item.date }}</span>
+          <p class="location"><i class="fa-solid fa-location-dot iconlocation"></i>{{ item.location }}</p>
+        </div>
+        <div class="cv-body">
+          <div class="title">{{ item.title }}</div>
+          <div class="institution">{{ item.institution }}</div>
+          {% if item.items %}
+          <ul class="items">
+            {% for line in item.items %}<li>{{ line }}</li>{% endfor %}
+          </ul>
+          {% endif %}
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<a class="anchor" id="experience"></a>
+<div class="card">
+  <h3 class="card-title">Experience</h3>
+  <ul class="list-group">
+    {% for item in cv.experience %}
+    <li class="list-group-item">
+      <div class="cv-row">
+        <div class="date-column">
+          <span class="cv-date-label">{{ item.date }}</span>
+          <p class="location"><i class="fa-solid fa-location-dot iconlocation"></i>{{ item.location }}</p>
+        </div>
+        <div class="cv-body">
+          <div class="title">{{ item.title }}</div>
+          <div class="institution">{{ item.institution }}</div>
+          {% if item.meta %}<div class="meta">{{ item.meta }}</div>{% endif %}
+          {% if item.items %}
+          <ul class="items">
+            {% for line in item.items %}<li>{{ line }}</li>{% endfor %}
+          </ul>
+          {% endif %}
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<a class="anchor" id="publications"></a>
+<div class="card">
+  <h3 class="card-title">Publications</h3>
+  {% include publications.html list=site.data.publications.main %}
+  <p class="more-link"><a href="publications.html">See all publications, including manuscripts under submission &rarr;</a></p>
+</div>
+
+<a class="anchor" id="talks"></a>
+<div class="card">
+  <h3 class="card-title">Talks</h3>
+  <ul class="list-group">
+    {% for item in cv.talks %}
+    <li class="list-group-item">
+      <div class="cv-row">
+        <div class="date-column"><span class="cv-date-label">{{ item.date }}</span></div>
+        <div class="cv-body">
+          <div class="cv-talk-kind">{{ item.kind }}</div>
+          <div class="cv-talk-title">{{ item.title }}</div>
+          <div class="cv-sub">{{ item.venue }}</div>
+          {% if item.host %}<div class="cv-muted">{{ item.host }}</div>{% endif %}
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<a class="anchor" id="service"></a>
+<div class="card">
+  <h3 class="card-title">Professional Service</h3>
+  <ul class="items">
+    {% for item in cv.service %}<li>{{ item }}</li>{% endfor %}
+  </ul>
+</div>
+
+<a class="anchor" id="software"></a>
+<div class="card">
+  <h3 class="card-title">Research Software Infrastructure</h3>
+  <ul class="list-group">
+    {% for item in cv.software %}
+    <li class="list-group-item project-item">
+      <div class="project-title"><a href="{{ item.link }}" target="_blank" rel="noopener">{{ item.name }}</a></div>
+      <div class="project-desc">{{ item.description }}</div>
+      <div class="btn-links">
+        <a class="btn-link-sm" href="{{ item.link }}" target="_blank" rel="noopener">Project page</a>
+        {% if item.code %}<a class="btn-link-sm" href="{{ item.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<a class="anchor" id="awards"></a>
+<div class="card">
+  <h3 class="card-title">Awards and Honors</h3>
+  <ul class="list-group">
+    {% for item in cv.awards %}
+    <li class="list-group-item">
+      <div class="cv-row">
+        <div class="date-column"><span class="cv-date-label">{{ item.date }}</span></div>
+        <div class="cv-body"><div class="title">{{ item.title }}</div></div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<a class="anchor" id="teaching"></a>
+<div class="card">
+  <h3 class="card-title">Teaching</h3>
+  <ul class="list-group">
+    {% for item in cv.teaching %}
+    <li class="list-group-item">
+      <div class="cv-row">
+        <div class="date-column"><span class="cv-date-label">{{ item.date }}</span></div>
+        <div class="cv-body">
+          <div class="title">{{ item.title }}</div>
+          <div class="institution">{{ item.institution }}</div>
+          {% if item.role %}<div class="meta">{{ item.role }}</div>{% endif %}
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<a class="anchor" id="advising"></a>
+<div class="card">
+  <h3 class="card-title">Research Advising</h3>
+  <ul class="list-group">
+    {% for item in cv.advising %}
+    <li class="list-group-item">
+      <div class="cv-row">
+        <div class="date-column"><span class="cv-date-label">{{ item.date }}</span></div>
+        <div class="cv-body">
+          <div class="title">{{ item.name }}</div>
+          <div class="cv-sub">{{ item.topic }}</div>
+          <div class="cv-muted">{{ item.level }}</div>
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<a class="anchor" id="activities"></a>
+<div class="card">
+  <h3 class="card-title">Extracurricular Activities</h3>
+  <ul class="list-group">
+    {% for item in cv.activities %}
+    <li class="list-group-item">
+      <div class="cv-row">
+        <div class="date-column"><span class="cv-date-label">{{ item.date }}</span></div>
+        <div class="cv-body">
+          <div class="title">{{ item.title }}</div>
+          <div class="cv-sub">{{ item.description }}</div>
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<a class="anchor" id="hackathons"></a>
+<div class="card">
+  <h3 class="card-title">Hackathons</h3>
+  <ul class="list-group">
+    {% for item in cv.hackathons %}
+    <li class="list-group-item">
+      <div class="cv-row">
+        <div class="date-column"><span class="cv-date-label">{{ item.date }}</span></div>
+        <div class="cv-body">
+          <div class="title">{{ item.title }}</div>
+          <div class="cv-sub">{{ item.result }}</div>
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<a class="anchor" id="skills"></a>
+<div class="card">
+  <h3 class="card-title">Technical Skills</h3>
+  <ul class="list-group">
+    {% for item in cv.skills %}
+    <li class="list-group-item">
+      <div class="skill-row">
+        <div class="skill-label">{{ item.label }}</div>
+        <div>{{ item.value }}</div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

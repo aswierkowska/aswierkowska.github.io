@@ -1,0 +1,89 @@
+---
+layout: default
+permalink: /index.html
+nav_active: About
+---
+
+<article>
+  <div class="profile">
+    <img src="{{ site.avatar }}" alt="Aleksandra Świerkowska">
+    <nav class="profile-links" aria-label="Contact and professional links">
+      <div class="profile-links__icons">
+        <a href="{{ site.email_link }}" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="{{ site.github_link }}" title="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+        <a href="{{ site.linkedin }}" title="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="{{ site.cv_link }}" title="Curriculum vitae" target="_blank" rel="noopener"><i class="ai ai-cv"></i></a>
+      </div>
+    </nav>
+    <div class="profile-contact">
+      <div>PhD Student</div>
+      <div><a href="{{ site.affiliation_link }}" target="_blank" rel="noopener">Systems Research Group, TUM</a></div>
+      <div class="location"><i class="fa-solid fa-location-dot iconlocation"></i>Munich, Germany</div>
+    </div>
+  </div>
+
+  <header class="post-header">
+    <h1 class="post-title">
+      <span class="name-first">Aleksandra</span> Świerkowska
+    </h1>
+    <div class="about-title-affiliation">Technical University of Munich</div>
+  </header>
+
+  <div class="clearfix">
+    <p>
+      I am a PhD student at the <a href="https://dse.in.tum.de/" target="_blank" rel="noopener">Systems Research Group</a>
+      at the Technical University of Munich (TUM), supervised by Prof. Pramod Bhatotia.
+    </p>
+    <p>
+      My research drives the development of <strong>practical quantum systems</strong>, with a core focus on
+      <strong>fault-tolerant quantum computing</strong>. I aim to bridge the gap between theoretical
+      <strong>Quantum Error Correction (QEC)</strong> and physical quantum hardware through rigorous
+      hardware-software co-design, developing scalable compilation frameworks and robust controller stacks.
+    </p>
+    <p>
+      Before my PhD, I wrote my master's thesis, <em>"Multi-Objective Circuit Optimizations in the Munich Quantum
+      Software Stack"</em>, in cooperation with the Leibniz Supercomputing Centre (LRZ), supervised by Prof. Martin Schulz.
+    </p>
+  </div>
+
+  <h2>Research Interests</h2>
+  <div class="card">
+    <ul class="items">
+      <li><strong>Quantum Error Correction</strong></li>
+      <li><strong>Quantum Compilers</strong></li>
+      <li><strong>Quantum Controllers</strong></li>
+    </ul>
+  </div>
+
+  <h2>Open Source</h2>
+  {% for item in site.data.cv.software %}
+  <div class="card project-item">
+    <div class="project-title"><a href="{{ item.link }}" target="_blank" rel="noopener">{{ item.name }}</a></div>
+    <div class="project-desc">{{ item.description }}</div>
+    <div class="btn-links">
+      <a class="btn-link-sm" href="{{ item.link }}" target="_blank" rel="noopener">Project page</a>
+      {% if item.code %}<a class="btn-link-sm" href="{{ item.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
+    </div>
+  </div>
+  {% endfor %}
+
+  <h2><a href="publications.html">Selected Publications</a></h2>
+  {% include publications.html list=site.data.publications.main selected_only=true %}
+  <p class="more-link"><a href="publications.html">See all publications &rarr;</a></p>
+
+  <h2>Teaching</h2>
+  <div class="card">
+    <ul class="items">
+      {% for item in site.data.cv.teaching %}
+      <li><strong>{{ item.title }}</strong> &mdash; {{ item.date }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <h2>Service</h2>
+  <div class="card">
+    <ul class="items">
+      {% for item in site.data.cv.service %}<li>{{ item }}</li>{% endfor %}
+    </ul>
+  </div>
+</article>

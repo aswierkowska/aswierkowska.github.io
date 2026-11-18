@@ -1,0 +1,171 @@
+contact:
+  - label: Name
+    value: Aleksandra Świerkowska
+  - label: Professional Title
+    value: Ph.D. Student in Computer Science
+  - label: Affiliation
+    value: 'Systems Research Group, Technical University of Munich'
+    link: https://dse.in.tum.de/
+  - label: Location
+    value: Munich, Germany
+  - label: Email
+    value: aleksandra.swierkowska(at)tum.de
+    link: "mailto:aleksandra.swierkowska@tum.de"
+  - label: Website
+    value: https://aswierkowska.github.io
+    link: https://aswierkowska.github.io
+
+research_interests: >-
+  My research drives the development of practical quantum systems, with a core focus on
+  fault-tolerant quantum computing. I aim to bridge the gap between theoretical Quantum Error
+  Correction (QEC) and physical quantum hardware through rigorous hardware-software co-design,
+  developing scalable compilation frameworks and robust controller stacks.
+
+education:
+  - date: 2024 - Present
+    location: Munich, Germany
+    title: Ph.D. in Computer Science
+    institution: Technical University of Munich
+    items:
+      - "Topic: Fault-tolerant quantum computing"
+      - "Supervisor: Prof. Pramod Bhatotia"
+      - "Expected graduation: December 2027"
+  - date: 2022 - 2024
+    location: Munich, Germany
+    title: M.Sc. in Informatics
+    institution: Technical University of Munich
+    items:
+      - "Master's Thesis: \"Multi-Objective Circuit Optimizations in the Munich Quantum Software Stack\", in cooperation with the Leibniz Supercomputing Centre (LRZ), supervised by Prof. Martin Schulz"
+  - date: 2018 - 2022
+    location: Poznań, Poland
+    title: B.Eng. in Computing
+    institution: Poznan University of Technology
+    items:
+      - "Bachelor's Thesis: \"Design and Implementation of AWS Voice Service Extension with Selected Built-In Features\""
+      - "Scholarship for the top 10% of students"
+
+experience:
+  - date: 2024 - Present
+    location: Munich, Germany
+    title: Research Assistant
+    institution: Technical University of Munich (TUM)
+    items:
+      - "Research on compilation and control for fault-tolerant quantum architectures."
+  - date: 2023 - 2024
+    location: Garching, Germany
+    title: Student Assistant
+    institution: Leibniz Supercomputing Centre (LRZ)
+    items:
+      - "Developing LLVM passes optimizing quantum circuits."
+  - date: 2023
+    location: Munich, Germany
+    title: Working Student
+    institution: Munich Quantum Instruments
+    items:
+      - "Developing software for a single-photon detector."
+  - date: 2022
+    location: London, United Kingdom
+    title: Systems Engineering Intern
+    institution: Quadrature
+    items:
+      - "Managing configuration of Linux services and vulnerability detection."
+  - date: 2021 - 2022
+    location: Poland
+    title: Python Development Intern
+    institution: Schneider Electric
+    items:
+      - "DevOps and backend programming."
+  - date: 2021
+    location: Remote
+    title: Production Engineer Intern
+    institution: Facebook
+    items:
+      - "Extending troubleshooting services."
+  - date: 2020 - 2021
+    location: Poznań, Poland
+    title: Intern
+    institution: Antmicro
+    items:
+      - "Programming SoC FPGA and LiteX BIOS development."
+
+talks:
+  - kind: Conference talk
+    title: "ECCentric: An Empirical Analysis of Quantum Error Correction Codes"
+    venue: "SIGMETRICS'26, Ann Arbor, MI, USA"
+    date: 2026
+  - kind: Invited talk
+    title: Hardware-Software Co-Design for Quantum Error Correction
+    venue: University of Michigan, Ann Arbor, MI, USA
+    host: "Host: Prof. Gokul Ravi"
+    date: 2026
+  - kind: Conference talk
+    title: Achieving Pareto-Optimality in Quantum Circuit Compilation via a Multi-Objective Heuristic Optimization Approach
+    venue: "QCE'24, Montreal, Canada"
+    date: 2024
+
+service:
+  - "<strong>Technical Program Committee</strong>, SC'26 \"HPC for Machine Learning\", International Conference for High Performance Computing, Networking, Storage, and Analysis."
+  - "<strong>Session Chair</strong>, \"Quantum Systems I\", SIGMETRICS'26, ACM SIGMETRICS International Conference on Measurement and Modeling of Computer Systems."
+
+software:
+  - name: ECCentric
+    link: https://eccentric-benchmark.github.io/
+    code: https://github.com/TUM-DSE/eccentric
+    description: >-
+      A modular, extensible, end-to-end benchmarking framework for quantum error correction codes.
+      ECCentric spans the full stack, from code construction and compilation to simulated execution
+      on devices with given topologies and noise characteristics, enabling an empirical comparison
+      of major QEC code families across decoders, noise models, and hardware platforms.
+
+awards:
+  - date: 2026
+    title: SIGMETRICS'26 Travel Grant
+  - date: 2020 - 2022
+    title: Rector of Poznan University of Technology Scholarship (top 10% of the best students)
+  - date: 2021
+    title: Intel and Perspektywy Foundation's New Technologies for Girls Scholarship (25 chosen across Poland)
+  - date: 2021
+    title: Google Women in Tech Mentoring Program (31 chosen across Poland)
+
+teaching:
+  - date: WS 2024/25, SS 2025, WS 2025/26
+    title: Quantum Software Systems Seminar
+    institution: Technical University of Munich
+
+advising:
+  - date: 2026
+    level: Master's thesis
+    name: Jannik Pflieger
+    topic: Resource-Aware Quantum Compiler for Magic State Protocols
+  - date: 2026
+    level: Master's thesis
+    name: Peter Wegmann
+    topic: Scalable Fault-Tolerant Quantum Compiler for Chiplet Architectures
+
+activities:
+  - date: 2021
+    title: Leader of the TinyML section, GHOST academic club
+    description: Managing a university grant project for 15 students deploying a TensorFlow Lite model on a microcontroller.
+  - date: 2020
+    title: Volunteer, IT for SHE Volunteering Program
+    description: Organizing IT workshops for primary school students.
+
+hackathons:
+  - date: 2022
+    title: CuValley Hack 2022
+    result: 1st place out of 15 teams from Poland
+  - date: 2021
+    title: "Hackyeah! 2021 - \"Best place for ... everything?\""
+    result: 2nd place out of 10 teams from Poland
+  - date: 2021
+    title: Facebook Women @ EMEA Virtual Hack 2021
+    result: 3rd place out of 18 teams from EMEA
+  - date: 2021
+    title: BEST Hacking League - AI Hackathon
+    result: 1st place out of 20 teams from Poland
+
+skills:
+  - label: Programming languages
+    value: C, C++, Python
+  - label: Technologies
+    value: Qiskit, Stim, LLVM, Linux, FPGA, TensorFlow Lite

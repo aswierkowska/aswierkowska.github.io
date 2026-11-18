@@ -1,46 +1,64 @@
 main:
   - title: "MCMit: Mid-Circuit Measurement Error Mitigation"
-    authors: "Emmanouil Giortamis, Felix Gust, Aleksandra Świerkowska, Sandra Stankovic, Innocenzo Fulginiti, Yanbin Chen, Xiaorang Guo, Benjamin Lienhard, Martin Schulz, Pramod Bhatotia"
+    authors: "Emmanouil Giortamis, Felix Gust, <strong>Aleksandra Świerkowska</strong>, Sandra Stankovic, Innocenzo Fulginiti, Yanbin Chen, Xiaorang Guo, Benjamin Lienhard, Martin Schulz, Pramod Bhatotia"
     conference: "To be published in Proceedings of the 59th IEEE/ACM International Symposium on Microarchitecture (MICRO'26)."
+    venue_short: "MICRO'26"
+    year: 2026
+    selected: true
     pdf: "https://arxiv.org/abs/2604.25863"
 
   - title: "ECCentric: An Empirical Analysis of Quantum Error Correction Codes"
-    authors: "Aleksandra Świerkowska, Jannik Pflieger, Emmanouil Giortamis, Pramod Bhatotia"
-    conference: "Proceedings of the ACM on Measurement and Analysis of Computing Systems, 2026."
+    authors: "<strong>Aleksandra Świerkowska</strong>, Jannik Pflieger, Emmanouil Giortamis, Pramod Bhatotia"
+    conference: "Proceedings of the ACM on Measurement and Analysis of Computing Systems (SIGMETRICS'26), 2026."
+    venue_short: "SIGMETRICS'26"
+    year: 2026
+    selected: true
     pdf: "assets/files/QECC_benchmark____camera_ready.pdf"
+    page: "https://eccentric-benchmark.github.io/"
+    code: "https://github.com/TUM-DSE/eccentric"
 
   - title: "A Software Platform to Support Disaggregated Quantum Accelerators"
-    authors: "Ercüment Kaya, Jorge Echavarria, Muhammad Nufail Farooqi, Aleksandra Świerkowska, Patrick Hopf, Burak Mete, Lukas Burgholzer, Robert Wille, Laura Schulz, Martin Schulz"
+    authors: "Ercüment Kaya, Jorge Echavarria, Muhammad Nufail Farooqi, <strong>Aleksandra Świerkowska</strong>, Patrick Hopf, Burak Mete, Lukas Burgholzer, Robert Wille, Laura Schulz, Martin Schulz"
     conference: "Proceedings of the SC '24 Workshops of the International Conference on High Performance Computing, Network, Storage, and Analysis."
+    venue_short: "SC-W'24"
+    year: 2024
     pdf: "https://doi.org/10.1109/SCW63240.2024.00205"
 
   - title: "Achieving Pareto-Optimality in Quantum Circuit Compilation via a Multi-Objective Heuristic Optimization Approach"
-    authors: "Aleksandra Świerkowska, Jorge Echavarria, Laura Schulz, Martin Schulz"
+    authors: "<strong>Aleksandra Świerkowska</strong>, Jorge Echavarria, Laura Schulz, Martin Schulz"
     conference: "Proceedings of 2024 IEEE International Conference on Quantum Computing and Engineering (QCE)."
+    venue_short: "QCE'24"
+    year: 2024
+    selected: true
     pdf: "https://doi.org/10.1109/QCE60285.2024.10297"
 
 under_submission:
-  - title: "Chipmunq: A Fault-Tolerant Compiler for Chiplet Quantum Architectures"
-    authors: "Peter Wegmann, Aleksandra Świerkowska, Emmanouil Giortamis, Pramod Bhatotia"
-    conference: "arXiv:2603.16389."
-    pdf: "https://arxiv.org/abs/2603.16389"
-
-  - title: "Harvest: Resource-Aware Quantum Compilation for Magic State Protocols"
-    authors: "Jannik Pflieger, Aleksandra Świerkowska, Emmanouil Giortamis, Pramod Bhatotia"
-    conference: "arXiv:2608.03315."
-    pdf: "https://arxiv.org/abs/2608.03315"
-
-  - title: "Oraqle: An Empirical Analysis of Qubit Readout and Discriminators in Quantum Error Correction"
-    authors: "Emmanouil Giortamis, Aleksandra Świerkowska, Sandra Stankovic, Felix Gust, Benjamin Lienhard, Pramod Bhatotia"
-    conference: "arXiv:2608.01939."
-    pdf: "https://arxiv.org/abs/2608.01939"
-
   - title: "RushHour: A Dynamically Reconfigurable Lattice-Surgery Architecture"
-    authors: "Noah Tornow, Aleksandra Świerkowska, Peter Wegmann, Pramod Bhatotia"
+    authors: "Noah Tornow, <strong>Aleksandra Świerkowska</strong>, Peter Wegmann, Pramod Bhatotia"
     conference: "arXiv:2608.18985."
+    venue_short: "arXiv"
     pdf: "https://arxiv.org/abs/2608.18985"
 
+  - title: "Harvest: Resource-Aware Quantum Compilation for Magic State Protocols"
+    authors: "Jannik Pflieger, <strong>Aleksandra Świerkowska</strong>, Emmanouil Giortamis, Pramod Bhatotia"
+    conference: "arXiv:2608.03315."
+    venue_short: "arXiv"
+    pdf: "https://arxiv.org/abs/2608.03315"
+
   - title: "Zero-G: A Pre-Decoder-Aware Decoder for Quantum Error Correction"
-    authors: "Peter Wegmann, Theodoros Augoustis, Aleksandra Świerkowska, Emmanouil Giortamis, Pramod Bhatotia"
+    authors: "Peter Wegmann, Theodoros Augoustis, <strong>Aleksandra Świerkowska</strong>, Emmanouil Giortamis, Pramod Bhatotia"
     conference: "arXiv:2608.02030."
+    venue_short: "arXiv"
     pdf: "https://arxiv.org/abs/2608.02030"
+
+  - title: "Oraqle: An Empirical Analysis of Qubit Readout and Discriminators in Quantum Error Correction"
+    authors: "Emmanouil Giortamis, <strong>Aleksandra Świerkowska</strong>, Sandra Stankovic, Felix Gust, Benjamin Lienhard, Pramod Bhatotia"
+    conference: "arXiv:2608.01939."
+    venue_short: "arXiv"
+    pdf: "https://arxiv.org/abs/2608.01939"
+
+  - title: "Chipmunq: A Fault-Tolerant Compiler for Chiplet Quantum Architectures"
+    authors: "Peter Wegmann, <strong>Aleksandra Świerkowska</strong>, Emmanouil Giortamis, Pramod Bhatotia"
+    conference: "arXiv:2603.16389."
+    venue_short: "arXiv"
+    pdf: "https://arxiv.org/abs/2603.16389"
